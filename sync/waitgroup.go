@@ -1,24 +1,27 @@
-//package main
 //
-//import (
-//	"fmt"
-//  "github.com/kainhuck/gokit/sync"
-//)
+// Simple Usage:
 //
-//func main() {
-//	var w sync.WaitGroupWrapper
+//     package main
 //
-//	w.Wrap(func() {
-//		fmt.Println("foo")
-//	})
+//     import (
+//	     "fmt"
+//       "github.com/kainhuck/gokit/sync"
+//     )
 //
-//	w.Wrap(func() {
-//		fmt.Println("bar")
-//	})
+//     func main() {
+//         var w sync.WaitGroupWrapper
 //
-//	w.Wait()
+//	       w.Wrap(func() {
+//		       fmt.Println("foo")
+//	       })
 //
-//}
+//	       w.Wrap(func() {
+//		       fmt.Println("bar")
+//	       })
+//
+//	       w.Wait()
+//
+//     }
 
 
 package sync
