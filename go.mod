@@ -1,1 +1,5 @@
-module "github.com/kainhuck/gokit"
+module github.com/kainhuck/gokit
+
+go 1.16
+
+require github.com/satori/go.uuid v1.2.0 // indirect
