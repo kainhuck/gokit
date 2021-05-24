@@ -5,7 +5,7 @@ import (
 	"os/exec"
 )
 
-func runCmd(view bool, command string, args ...string) error{
+func RunCmd(view bool, command string, args ...string) error{
 	cmdP, err := exec.LookPath(command)
 	if err != nil {
 		return err
@@ -19,7 +19,7 @@ func runCmd(view bool, command string, args ...string) error{
 	return cmd.Run()
 }
 
-func runCmdOut(command string, args ...string)(output string,err error){
+func RunCmdOut(command string, args ...string)(output string,err error){
 	cmdP, err := exec.LookPath(command)
 	if err != nil {
 		return "", err
